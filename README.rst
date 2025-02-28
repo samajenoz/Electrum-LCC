@@ -1,102 +1,168 @@
-Electrum-LCC - Lightweight Litecoin Cash client
-==========================================
+=======================================================
+Electrum-LCC - Lightweight Litecoin Cash Client
+=======================================================
 
-::
+.. raw:: html
 
-  Licence: MIT Licence
-  Original Author: Thomas Voegtlin
-  Port Maintainer: Loxley
-  Language: Python
-  Homepage: https://github.com/litecoincash-project/electrum-lcc
+   <div align="center">
+   <img src="https://img.shields.io/badge/Electrum--LCC-Fast%20%26%20Lightweight-blue?style=for-the-badge" alt="Electrum-LCC"/>
+   <img src="https://img.shields.io/badge/Python-3.7+-orange?style=for-the-badge" alt="Python 3.7+"/>
+   <img src="https://img.shields.io/badge/Port_Maintainer-Loxley-purple?style=for-the-badge" alt="Maintainer: Loxley"/>
+   <a href="https://github.com/samajenoz/Electrum-LCC/blob/main/LICENSE">
+     <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License"/>
+   </a>
+   </div>
 
+-------------------------------------------------------
+A Modern, Minimal, and Secure Litecoin Cash Experience
+-------------------------------------------------------
 
+Electrum-LCC is a lightweight and user-friendly Litecoin Cash (LCC) wallet.  
+Originally derived from **Thomas Voegtlin**’s Electrum, it has been adapted to Litecoin Cash by **Loxley**, focusing on **speed**, **security**, and **usability**.
 
+- **License**: MIT License  
+- **Language**: Python  
+- **Homepage**: https://github.com/samajenoz/Electrum-LCC  
 
+.. contents::
+   :local:
+   :depth: 2
 
+-----------------
+1. Key Features
+-----------------
 
-Getting started
-===============
+- **Instant On**  
+  No need for the entire LCC blockchain. Electrum-LCC connects to remote nodes, letting you synchronize quickly.  
 
-Electrum is a pure python application. If you want to use the
-Qt interface, install the Qt dependencies::
+- **Security First**  
+  Your private keys remain offline—never sent to servers. Protect your wallet with passphrase encryption and strong security defaults.
 
-    sudo apt-get install python3-pyqt5
+- **Lightweight and Fast**  
+  Minimal resource footprint, ensuring compatibility with both modern and older hardware.
 
-If you downloaded the official package (tar.gz), you can run
-Electrum from its root directory, without installing it on your
-system; all the python dependencies are included in the 'packages'
-directory. To run Electrum from its root directory, just do::
+- **User-Friendly Interface**  
+  Easily send and receive LCC, manage multiple addresses, and back up your wallet. Ideal for both beginners and advanced users.
 
-    ./electrum-lcc
+- **Open Source and Extensible**  
+  Written in Python for maintainability. Developers can easily customize or extend functionality.
 
-You can also install Electrum on your system, by running this command::
+----------------------------
+2. Getting Started
+----------------------------
 
-    sudo apt-get install python3-setuptools
-    pip3 install .[full]
+Electrum-LCC is written in **Python 3.7+**.  
+Below is a recommended installation path on Debian/Ubuntu; adapt for other platforms as needed.
 
-This will download and install the Python dependencies used by
-Electrum, instead of using the 'packages' directory.
-The 'full' extra contains some optional dependencies that we think
-are often useful but they are not strictly needed.
+.. code-block:: bash
 
-If you cloned the git repository, you need to compile extra files
-before you can run Electrum. Read the next section, "Development
-Version".
+   # 1. Install Python 3, pip, and other basics:
+   sudo apt-get update
+   sudo apt-get install python3 python3-pip
 
+   # 2. (Optional) Install PyQt5 for the GUI:
+   sudo apt-get install python3-pyqt5
 
+   # 3. Clone or download the official repository:
+   git clone https://github.com/samajenoz/Electrum-LCC.git
+   cd Electrum-LCC
 
-Development version
-===================
+   # 4. Install Electrum-LCC (and dependencies) with pip:
+   pip3 install .[full]
 
-Check out the code from GitHub::
+   # 5. Run Electrum-LCC:
+   ./electrum-lcc
 
-    git clone https://github.com/litecoincash-project/electrum-lcc.git
-    cd electrum-lcc
+If you prefer not to install system-wide, simply keep the project folder intact and run  
+``./electrum-lcc`` from within it—pip will manage dependencies locally.
 
-Run install (this should install dependencies)::
+----------------------------
+3. Development Version
+----------------------------
 
-    pip3 install .[full]
+For contributors or bleeding-edge testers:
 
-Compile the icons file for Qt::
+1. **Clone the GitHub repository**:
 
-    sudo apt-get install pyqt5-dev-tools
-    pyrcc5 icons.qrc -o gui/qt/icons_rc.py
+   .. code-block:: bash
 
-Compile the protobuf description file::
+      git clone https://github.com/samajenoz/Electrum-LCC.git
+      cd Electrum-LCC
 
-    sudo apt-get install protobuf-compiler
-    protoc --proto_path=lib/ --python_out=lib/ lib/paymentrequest.proto
+2. **Install in development mode** (installs needed dependencies):
 
-Create translations (optional)::
+   .. code-block:: bash
 
-    sudo apt-get install python-requests gettext
-    ./contrib/make_locale
+      pip3 install .[full]
 
+3. **Compile Qt icons** for GUI:
 
+   .. code-block:: bash
 
+      sudo apt-get install pyqt5-dev-tools
+      pyrcc5 icons.qrc -o gui/qt/icons_rc.py
 
-Creating Binaries
-=================
+4. **Compile protobuf** for payment requests:
 
+   .. code-block:: bash
 
-To create binaries, create the 'packages' directory::
+      sudo apt-get install protobuf-compiler
+      protoc --proto_path=lib/ --python_out=lib/ lib/paymentrequest.proto
 
-    ./contrib/make_packages
+5. **(Optional) Generate translations**:
 
-This directory contains the python dependencies used by Electrum.
+   .. code-block:: bash
 
-Mac OS X / macOS
---------
+      sudo apt-get install python-requests gettext
+      ./contrib/make_locale
 
-See `contrib/build-osx/`.
+-------------------------
+4. Creating Binaries
+-------------------------
 
-Windows
--------
+Electrum-LCC can be distributed as binaries (with dependencies bundled) to simplify user installation.
 
-See `contrib/build-wine/`.
+1. **Build the 'packages' directory** to gather Python dependencies:
 
+   .. code-block:: bash
 
-Android
--------
+      ./contrib/make_packages
 
-See `gui/kivy/Readme.txt` file.
+2. **Platform-specific Builds**:
+
+   - **macOS**: Refer to ``contrib/build-osx/`` for instructions on creating a macOS application.  
+   - **Windows**: Consult ``contrib/build-wine/`` to build Windows executables.  
+   - **Linux**: Typically, you can provide tarballs containing the `packages` directory plus any needed scripts.
+
+-------------------------
+5. Additional Tips
+-------------------------
+
+- **Security Best Practices**  
+  - Verify checksums or signatures of all downloads.  
+  - Use strong passphrases and keep your seed phrase offline.
+
+- **Regular Backups**  
+  Your seed phrase is everything. Store it safely. Electrum-LCC's deterministic wallet design ensures the seed can restore your entire transaction history and balance.
+
+- **Community & Support**  
+  Join the Litecoin Cash community and follow official announcements to stay updated on new releases, security alerts, and best practices.
+
+- **Customizations**  
+  If you’re a developer, feel free to contribute or tailor Electrum-LCC to your own needs. The code is modular and open-source.
+
+-------------------------
+6. License
+-------------------------
+
+Electrum-LCC is distributed under the **MIT License**.  
+To review the complete license text, please see the  
+`LICENSE file <https://github.com/samajenoz/Electrum-LCC/blob/main/LICENSE>`_ in this repository.
+
+---------------------------------
+Thank You for Using Electrum-LCC!
+---------------------------------
+
+Enhance your Litecoin Cash experience with speed, security,  
+and the confidence that comes from open-source development.  
+Happy transacting!  
