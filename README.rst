@@ -8,7 +8,7 @@ Electrum-LCC - Lightweight Litecoin Cash Client
    <img src="https://img.shields.io/badge/Electrum--LCC-Fast%20%26%20Lightweight-blue?style=for-the-badge" alt="Electrum-LCC"/>
    <img src="https://img.shields.io/badge/Python-3.7+-orange?style=for-the-badge" alt="Python 3.7+"/>
    <img src="https://img.shields.io/badge/Port_Maintainer-Loxley-purple?style=for-the-badge" alt="Maintainer: Loxley"/>
-   <a href="https://github.com/samajenoz/Electrum-LCC/blob/main/LICENSE">
+   <a href="https://github.com/samajenoz/Electrum-LCC/blob/master/LICENCE">
      <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License"/>
    </a>
    </div>
