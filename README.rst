@@ -47,9 +47,9 @@ Electrum-LCC is built for versatility across major operating systems:
   A robust bundle supporting a wide range of Linux distributions.
 
 Download Directly:
-- **Windows**: `Download Windows Installer <https://github.com/samajenoz/Electrum-LCC/releases/tag/v3.7.1>`_
-- **macOS**: `Download macOS Package <https://github.com/samajenoz/Electrum-LCC/releases/tag/v3.7.1>`_
-- **Linux**: `Download Linux Bundle <https://github.com/samajenoz/Electrum-LCC/releases/tag/v3.7.1>`_
+- **Windows**: `Download Windows Installer <https://github.com/samajenoz/Electrum-LCC/releases/download/v3.7.1/electrum-lcc-4.2.4.exe>`_
+- **macOS**: `Download macOS dmg <https://github.com/samajenoz/Electrum-LCC/releases/download/v3.7.1/electrum-lcc-3.7.1.dmg>`_
+- **Linux**: `Download Linux Bundle <https://github.com/samajenoz/Electrum-LCC/releases/download/v3.7.1/electrum-lcc-3.7.1.tar.gz>`_
 
 -----------------
 1. Key Features
