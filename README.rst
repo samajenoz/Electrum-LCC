@@ -4,7 +4,7 @@ Electrum-LCC - Lightweight Litecoin Cash Client
 
 .. raw:: html
 
-   <div align="center">
+   <div align="left">
    <img src="https://img.shields.io/badge/Electrum--LCC-Fast%20%26%20Lightweight-blue?style=for-the-badge" alt="Electrum-LCC"/>
    <img src="https://img.shields.io/badge/Python-3.7+-orange?style=for-the-badge" alt="Python 3.7+"/>
    <img src="https://img.shields.io/badge/Port_Maintainer-Loxley-purple?style=for-the-badge" alt="Maintainer: Loxley"/>
@@ -33,7 +33,7 @@ Get the Latest Release
 ------------------------------
 Access the newest release (v3.7.1) by visiting our official release page:
 
-   `Electrum-LCC v3.7.1 <https://github.com/samajenoz/Electrum-LCC/releases/tag/v3.7.1>`_
+   `Electrum-LCC v3.7.2 <https://github.com/samajenoz/Electrum-LCC/releases/tag/v3.7.2>`_
 
 Choose Your Platform
 -----------------------------
@@ -47,9 +47,9 @@ Electrum-LCC is built for versatility across major operating systems:
   A robust bundle supporting a wide range of Linux distributions.
 
 Download Directly:
-- **Windows**: `Download Windows Installer <https://github.com/samajenoz/Electrum-LCC/releases/download/v3.7.1/electrum-lcc-4.2.4.exe>`_
-- **macOS**: `Download macOS dmg <https://github.com/samajenoz/Electrum-LCC/releases/download/v3.7.1/electrum-lcc-3.7.1.dmg>`_
-- **Linux**: `Download Linux Bundle <https://github.com/samajenoz/Electrum-LCC/releases/download/v3.7.1/electrum-lcc-3.7.1.tar.gz>`_
+- **Windows**: `Download Windows Installer <https://github.com/samajenoz/Electrum-LCC/releases/download/v3.7.2/electrum-lcc-3.7.2.exe>`_
+- **macOS**: `Download macOS dmg <https://github.com/samajenoz/Electrum-LCC/releases/download/v3.7.2/electrum-lcc-3.7.2.dmg>`_
+- **Linux**: `Download Linux Bundle <https://github.com/samajenoz/Electrum-LCC/releases/download/v3.7.2/electrum-lcc-3.7.2.tar.gz>`_
 
 -----------------
 1. Key Features
